@@ -19,7 +19,8 @@ class Sessions(models.Model):
     user_id = fields.Many2one('res.users', string="Instructor")
     start_date = fields.Date()
     seats = fields.Integer('Room Capacity')
-    attendee_ids = fields.Many2many('res.partner', string="Attendees")
+    attendee_ids = fields.Many2many(
+        'res.partner', string="Attendees", limit=seats)
 
     taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
 
@@ -27,7 +28,7 @@ class Sessions(models.Model):
     def _taken_seats(self):
         for r in self:
             if not r.seats:
-                r.taken_seats = 0.0
+                r.taken_seats = 0
             else:
                 r.taken_seats = len(r.attendee_ids)
 

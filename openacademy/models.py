@@ -24,8 +24,9 @@ class Sessions(models.Model):
 
 class ComputedModel(models.Model):
     _name = 'test.computed'
-    name = fields.Char(compute='_compute_name')
     _description = 'Computed'
+
+    name = fields.Char(compute='_compute_name')
 
     @api.multi
     def _compute_name(self):

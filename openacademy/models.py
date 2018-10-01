@@ -20,7 +20,7 @@ class Sessions(models.Model):
     start_date = fields.Date()
     seats = fields.Integer('Room Capacity')
     attendee_ids = fields.Many2many(
-        'res.partner', string="Attendees", limit=seats)
+        'res.partner', string="Attendees", limit=self.seats)
 
     taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
 

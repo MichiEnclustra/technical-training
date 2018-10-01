@@ -40,10 +40,5 @@
         parent="openacademy_root_menu"
         action="openacademy_attendee_action"
         name="Attendees" />
-        
-    <menuitem
-        id="openacademy_comp_menu"
-        parent="openacademy_root_menu"
-        name="ComputedModel" />
 
 </odoo>

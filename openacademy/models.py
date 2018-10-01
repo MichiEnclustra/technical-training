@@ -21,14 +21,12 @@ class Sessions(models.Model):
     seats = fields.Integer('Room Capacity')
     attendee_ids = fields.Many2many('res.partner', string="Attendees")
 
+    taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
 
-class ComputedModel(models.Model):
-    _name = 'test.computed'
-    _description = 'Computed'
-
-    name = fields.Char(compute='_compute_name')
-
-    @api.multi
-    def _compute_name(self):
-        for record in self:
-            record.name = str(random.randint(1, 1e6))
+    @api.depends('seats', 'attendee_ids')
+    def _taken_seats(self):
+        for r in self:
+            if not r.seats:
+                r.taken_seats = 0.0
+            else:
+                r.taken_seats = 100.0 * len(r.attendee_ids) / r.seats

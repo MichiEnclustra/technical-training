@@ -6,7 +6,6 @@
     'author': 'Odoo SA',
     'depends': ['base'],
     'data': [
-        'views.xml',
         'views/openacademy.xml'
     ],
     'description': "Only the basic to get you started",

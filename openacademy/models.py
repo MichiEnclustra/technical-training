@@ -19,10 +19,9 @@ class Sessions(models.Model):
     user_id = fields.Many2one('res.users', string="Instructor")
     start_date = fields.Date()
     seats = fields.Integer('Room Capacity')
-
-    taken_seats = fields.Integer(string="Taken seats", compute='_taken_seats')
     attendee_ids = fields.Many2many(
-        'res.partner', string="Attendees", limit=taken_seats)
+        'res.partner', string="Attendees", limit=seats)
+    taken_seats = fields.Integer(string="Taken seats", compute='_taken_seats')
 
     @api.depends('seats', 'attendee_ids')
     def _taken_seats(self):

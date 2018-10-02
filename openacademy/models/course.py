@@ -74,4 +74,4 @@ class Session(models.Model):
 
 class Instructor(models.Model):
     _inherit = 'res.partner'
-    instructor = fields.Boolean(required=True)
+    instructor = fields.Boolean(default=False)

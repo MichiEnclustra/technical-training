@@ -71,7 +71,7 @@ class Session(models.Model):
             self.end_date) - fields.Date.from_string(self.start_date)
         self.duration = delta.days + 1
 
-
+# test
 class Instructor(models.Model):
     _inherit = 'res.partner'
     instructor = fields.Boolean(default=False)

@@ -46,6 +46,19 @@
       <field name="res_model">coopplanning.task</field>
       <field name="view_mode">tree,form</field>
     </record>
+    
+    <search>
+      <field name="task_type_id" />
+      <field name="worker_id" />
+      <!-- <field name="name"/>
+      <field name="description"/> -->
+      <!-- <filter name="worker_id" string="Worker ID"
+              domain="[('worker_id', '=', uid)]"/> -->
+      <!-- <group string="Group By"> -->
+          <!-- <filter name="by_responsible" string="Responsible"
+                  context="{'group_by': 'responsible_id'}"/>
+      </group> -->
+    </search>
 
     <!-- Top menu item -->
     <menuitem name="Planning" id="menu_task_top" parent="menu_root" sequence="1" />

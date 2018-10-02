@@ -47,13 +47,12 @@
       <field name="view_mode">tree,form</field>
     </record>
     
-    <search>
+    <!-- <search>
       <field name="name" />
       <field name="description" string="Name and description"
            filter_domain="['|', ('name'), ('description')]"/>
-      <!-- <filter name="name" string="Worker ID"
-              domain="[('name', '=', uid)]"/> -->
-    </search>
+    
+    </search> -->
 
     <!-- Top menu item -->
     <menuitem name="Planning" id="menu_task_top" parent="menu_root" sequence="1" />

@@ -64,7 +64,7 @@ class Session(models.Model):
             return
         if self.end_date < self.start_date:
             return {'warning': {
-                'title': "Incorrect date value",
+                'title': "Incorrect date value ",
                 'message': "End date is earlier then start date",
             }}
         delta = fields.Date.from_string(

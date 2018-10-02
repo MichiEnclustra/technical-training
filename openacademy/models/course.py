@@ -75,5 +75,5 @@ class Session(models.Model):
 class Instructor(models.Model):
     _inherit = 'res.partner'
     instructor = fields.Boolean(default=False)
-    courses_visited = fields.One2many(
-        'openacademy.course', 'session.attendee_ids', string="Sessions")
+    sessions_attended = fields.Many2many(
+        'openacademy.session', string="Sessions Attended")

@@ -47,6 +47,11 @@
                         <field name="phone" widget="phone"/>
                         <field name="mobile" widget="phone"/>
                         <field name="instructor"/>
+                        <field name="sessions_attended">
+                          <tree>
+                            <field name="name"/>
+                          </tree>
+                        </field>
                     </group>
                 </form>
             </field>

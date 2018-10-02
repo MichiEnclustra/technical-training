@@ -33,7 +33,7 @@
                                 <field name="course_id" />
                                 <field name="responsible_id" />
                                 <field name="level" />
-                                <field name="instructor_id" filter_domain="[('instructor','=',True)]"/>
+                                <field name="instructor_id" domain="[('instructor','=',True)]"/>
                                 <field name="active" />
                             </group>
                             <group>

@@ -17,6 +17,8 @@
                     <field name="country_id" invisible="1"/>
                     <field name="parent_id" invisible="1"/>
                     <field name="active" invisible="1"/>
+                    <field name="instructor"/>
+                    
                 </tree>
             </field>
         </record>

@@ -46,7 +46,7 @@
                         <field name="email" widget="email" required="context.get('force_email', False)" attrs="{'required': [('user_ids','!=', [])]}"/>
                         <field name="phone" widget="phone"/>
                         <field name="mobile" widget="phone"/>
-                        <field name="instructor" domain="[('instructor','=',True)]"/>
+                        <field name="instructor"/>
                     </group>
                 </form>
             </field>

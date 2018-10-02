@@ -47,6 +47,20 @@
       <field name="view_mode">tree,form</field>
     </record>
     
+    <search string="Filters">
+        <field name="name" string="Filter Name"/>
+        <filter string="User" domain="[('user_id','!=',False)]" name="user" help="Filters visible only for one user"/>
+        <filter string="Shared" domain="[('user_id','=',False)]" name="shared" help="Filters shared with all users"/>
+        <filter string="My filters" domain="[('user_id','=',uid)]" name="my_filters" help="Filters created by myself"/>
+        <separator/>
+        <group expand="0" string="Group By">
+            <filter string="User" name="user" domain="[]" context="{'group_by':'user_id'}"/>
+            <filter string="Model" name="model" domain="[]" context="{'group_by':'model_id'}"/>
+        </group>
+        <field name="model_id"/>
+        <field name="user_id"/>
+    </search>
+    
     <!-- <search>
       <field name="name" />
       <field name="description" string="Name and description"

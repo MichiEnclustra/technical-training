@@ -15,6 +15,5 @@
         <menuitem id="contact_menu" name="Contacts"
                   parent="configuration_menu"
                   action="contact_list_action" />
-
     </data>
 </odoo>

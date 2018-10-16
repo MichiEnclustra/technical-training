@@ -14,8 +14,8 @@
         <field name="level" eval="2" />
     </record>
 
-    <record id="course_functionnal" model="openacademy.course">
-        <field name="name">Functionnal Training</field>
+    <record id="course_functional" model="openacademy.course">
+        <field name="name">Functional Training</field>
         <field name="responsible_id" ref="base.user_root" />
         <field name="level" eval="1" />
     </record>
@@ -34,7 +34,7 @@
         <field name="duration">4.5</field>
         <field name="seats">15</field>
         <field name="instructor_id" ref="teacher_francis" />
-        <field name="course_id" ref="course_functionnal" />
-        <field name="description">First session of odoo functionnal training</field>
+        <field name="course_id" ref="course_functional" />
+        <field name="description">First session of odoo functional training</field>
     </record>
 </odoo>

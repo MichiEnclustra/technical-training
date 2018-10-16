@@ -24,10 +24,10 @@
     # always loaded
     'data': [
         'data/openacademy_data.xml',
-        'views/academy_menu.xml',
         'views/courses.xml',
         'views/sessions.xml',
         'views/partners.xml',
+        'views/academy_menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [],

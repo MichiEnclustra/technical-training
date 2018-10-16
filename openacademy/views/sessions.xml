@@ -69,9 +69,12 @@
             <field name="view_mode">tree,form</field>
         </record>
         
+        <menuitem id="session_menu_top" name="Sessions"
+                 parent="menu_root" />
+
         <!-- actions -->
         <menuitem id="session_menu" name="Sessions"
-                parent="configuration_menu" action="action_session"/>
+                parent="session_menu_top" action="action_session"/>
         
     </data>
 </odoo>

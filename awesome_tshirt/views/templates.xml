@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  
+
   <template id="awesome_tshirt.order_public_page" name="Awesome T-Shirt public page">
     <t t-call="web.layout">
       <t t-set="head">

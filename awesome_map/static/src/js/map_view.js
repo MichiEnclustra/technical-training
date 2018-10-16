@@ -5,7 +5,7 @@ var AbstractView = require('web.AbstractView');
 var viewRegistry = require('web.view_registry');
 
 var MapView = AbstractView.extend({});
-console.log('test ABC');
+
 viewRegistry.add('map', MapView);
 
 });

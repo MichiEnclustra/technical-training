@@ -4,6 +4,7 @@ from odoo import models, fields, api, exceptions, _
 
 class Session(models.Model):
     _name = 'openacademy.session'
+    _description = 'Session Model'
 
     name = fields.Char(required=True)
     start_date = fields.Date(default=fields.Date.today)

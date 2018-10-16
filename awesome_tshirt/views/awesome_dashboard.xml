@@ -1,4 +1,4 @@
-<template id="assets_backend" name="awesome_tshirt assets" inherit_id="web.assets_backend">
+<template id="assets_backend" name="awesome_dashboard assets" inherit_id="web.assets_backend">
     <xpath expr="//script[last()]" position="after">
         <script type="text/javascript" src="/awesome_tshirt/static/src/js/awesome_dashboard.js"></script>
     </xpath>

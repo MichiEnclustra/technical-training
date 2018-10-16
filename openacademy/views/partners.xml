@@ -10,11 +10,9 @@
         </record>
         
         <menuitem id="configuration_menu" name="Configuration"
-                  parent="menu_root" />
+                 parent="menu_root" />
 
-        <menuitem id="contact_menu" name="Contacts"
-                  parent="configuration_menu"
-                  action="contact_list_action" />
-
+       <menuitem id="contact_menu" name="Contacts"
+                 parent="configuration_menu" action="contact_list_action" />
     </data>
 </odoo>

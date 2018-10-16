@@ -70,8 +70,7 @@
         </record>
         
         <!-- actions -->
-        <menuitem name="Sessions" id="menu_session" parent="menu_course_top"
-                  action="action_session"/>
+        <menuitem name="Sessions" id="menu_session" parent="menu_course_top" action="action_session"/>
 
     </data>
 </odoo>

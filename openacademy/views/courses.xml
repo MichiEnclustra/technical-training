@@ -51,11 +51,16 @@
             <field name="res_model">openacademy.course</field>
             <field name="view_mode">tree,form</field>
         </record>
-
+        
+        <!-- Top menu item -->
+        <menuitem name="Academy2" id="menu_root"/>
+        
         <!-- Top menu item -->
         <menuitem name="Academy" id="menu_root"/>
+        
         <!-- menu categories -->
         <menuitem name="Courses" id="menu_course_top" parent="menu_root"/>
+        
         <!-- actions -->
         <menuitem name="Courses" id="menu_course" parent="menu_course_top"
                             action="action_course"/>

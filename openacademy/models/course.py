@@ -4,6 +4,7 @@ from odoo import models, fields, api, exceptions, _
 
 class Course(models.Model):
     _name = 'openacademy.course'
+    _description = 'Course Model'
 
     name = fields.Char()
     description = fields.Text()

@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <!-- Root Menu Item -->
-  <menuitem
-    id="configuration_menu"
-    name="Configuration"
-    parent="menu_root" />
 
-  <menuitem
-    id="contact_menu"
-    name="Contacts"
-    parent="configuration_menu"
-    action="contact_list_action" />
   
-  <!-- Top menu item -->
-  <menuitem
-    name="Academy"
-    parent="configuration_menu"
-    id="academy_root" />
-    
-  <!-- menu categories -->
-  <menuitem
-    name="Courses"
-    id="menu_course_top"
-    parent="academy_root" />
-  
-  <!-- actions -->
-  <menuitem
-    name="Courses"
-    id="menu_course"
-    parent="menu_course_top"
-    action="action_course" />
-  
-  <!-- actions -->
-  <menuitem
-    name="Sessions"
-    id="menu_session"
-    parent="menu_course_top"
-    action="action_session"/>
+
 </odoo>

@@ -53,9 +53,6 @@
         </record>
         
         <!-- Top menu item -->
-        <menuitem name="Academy2" id="menu_root"/>
-        
-        <!-- Top menu item -->
         <menuitem name="Academy" id="menu_root"/>
         
         <!-- menu categories -->
